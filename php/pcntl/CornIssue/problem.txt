@@ -1,0 +1,10 @@
+Need to implement mailing corm job with following responsibilities.
+
+1. Fetch the contacts from the database (Based on some logic which is not part of problem statement)
+2. Save those contacts into other table (From there, other cron job will pick them up and send mail)
+
+Problem start when first query gets 10000+ mails, with lot of data, we obviously get 'out of memory' error, which is expected. A simple solution, we will get contact in bunch of 1000.
+
+OK We did it but on stageing server, we got more then 50000 records that is 50000+ insert statement with quite a few business logic. It was taking around 1+ hours to finish.
+
+Another problem, that cron job has to run every hour so each cron job must finish in less then one hour. Solution we thought, run 50 threads of 1000 records in parallel using 'pcntl'. Just testing/using that for the first time.
