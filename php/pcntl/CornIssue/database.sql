@@ -9,3 +9,8 @@ CREATE TABLE IF NOT EXISTS `pcntl_contacts` (
 ) ENGINE=InnoDB;
 
 
+CREATE TABLE IF NOT EXISTS `pcntl_email` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(80) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
