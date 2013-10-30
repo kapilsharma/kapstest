@@ -1,7 +1,9 @@
 <?PHP
 
 /**
- * Dependency test\
+ * Dependency test
+ *
+ * @author kapilsharma
  * @group all
  * @group dependency
  * @group array
