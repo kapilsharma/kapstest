@@ -32,9 +32,15 @@
         * Now doctype is loaded, we need to display it in our layout. To do that, add following line in application/layouts/scripts/layout.phtml file
             <?php echo $this->doctype() ?>
         * Reload page and check if doctype is loaded or not.
-        * Now we can also design template. My template design is available at github.com
+        * Now we can also design template. My template design is available at https://github.com/kapilsharma/kapstest/blob/master/zendtest/application/layouts/scripts/layout.phtml but you can make your own.
 
-zf create module posts
+* Create modules.
+    There are times while working on large application, we might want to divid our application in differnet modules. Zend supports creating multiple modules. Lets create 'library' module for our test application.
+        zf create module library
+    
+
+
+
 zf create controller Index 1 posts
 zf create controller Create 1 posts
 zf create controller Delete 1 posts
