@@ -6,7 +6,33 @@
   
 * Enable layout
     zf enable layout
+  
+    -> This command will add following line in application.ini file
+        resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts"
 
+    -> It will also add following file as default layout
+        application/layouts/scripts/layout.phtml
+
+    -> Layout is a template in zend. Now our layout is created, we would like to edit that.
+        * first thing will be to add doctype, lets add HTML 5 doctype. list of available doctypes can be found at http://framework.zend.com/manual/1.12/en/zend.view.helpers.html
+            * To create doctype, simplest way is to initialize it in bootstrap. Add following function in Application/Bootstrap.php file
+                class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
+                {
+                    protected function _initDoctype()
+                    {
+                        $this->bootstrap('view');
+                        $view = $this->getResource('view');
+                        $view->doctype('HTML5');
+                    }
+                }
+            * Here first line loads 'view' resource. So we must define it in application.ini file. To define, add following line in application.ini under production
+                resources.view[] =
+            * Second line loads the resource named 'view', which we defined as array.
+            * Third line add HTML5 as doctype.
+        * Now doctype is loaded, we need to display it in our layout. To do that, add following line in application/layouts/scripts/layout.phtml file
+            <?php echo $this->doctype() ?>
+        * Reload page and check if doctype is loaded or not.
+        * Now we can also design template. My template design is available at github.com
 
 zf create module posts
 zf create controller Index 1 posts
