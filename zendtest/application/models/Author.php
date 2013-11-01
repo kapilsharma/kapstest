@@ -48,15 +48,59 @@ class Application_Model_Author
         return $this;
     }
  
-    public function setComment($text)
+    public function setId($id)
     {
-        $this->_comment = (string) $text;
+        $this->_id = (int) $id;
         return $this;
     }
  
-    public function getComment()
+    public function getId()
     {
-        return $this->_comment;
+        return $this->_id;
+    }
+
+    public function setFirstName($firstName)
+    {
+        $this->_firstName = (string) $firstName;
+        return $this;
+    }
+
+    public function getFirstName()
+    {
+        return $this->_firstName;
+    }
+
+    public function setMiddleName($middleName)
+    {
+        $this->_middleName = (string) $middleName;
+        return $this;
+    }
+
+    public function getMiddleName()
+    {
+        return $this->_middleName;
+    }
+
+    public function setLastName($lastName)
+    {
+        $this->_lastName = (string) $lastName;
+        return $this;
+    }
+
+    public function getLastName()
+    {
+        return $this->_lastName;
+    }
+
+    public function setPopularName($popularName)
+    {
+        $this->_popularName = (string) $popularName;
+        return $this;
+    }
+
+    public function getPopularName()
+    {
+        return $this->_popularName;
     }
  
     public function setEmail($email)
@@ -70,26 +114,15 @@ class Application_Model_Author
         return $this->_email;
     }
  
-    public function setCreated($ts)
+    public function setAddress($address)
     {
-        $this->_created = $ts;
+        $this->_address = $address;
         return $this;
     }
  
-    public function getCreated()
+    public function getAddress()
     {
-        return $this->_created;
-    }
- 
-    public function setId($id)
-    {
-        $this->_id = (int) $id;
-        return $this;
-    }
- 
-    public function getId()
-    {
-        return $this->_id;
+        return $this->_address;
     }
 
 }
