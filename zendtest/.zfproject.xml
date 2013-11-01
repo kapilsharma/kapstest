@@ -19,7 +19,13 @@
           <layoutScriptFile layoutName="layout"/>
         </layoutScriptsDirectory>
       </layoutsDirectory>
-      <modelsDirectory/>
+      <modelsDirectory>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="Author"/>
+        </dbTableDirectory>
+        <modelFile modelName="AuthorMapper"/>
+        <modelFile modelName="Author"/>
+      </modelsDirectory>
       <modulesDirectory>
         <moduleDirectory moduleName="library">
           <apisDirectory enabled="false"/>
