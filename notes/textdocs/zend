@@ -37,11 +37,13 @@
 * Create modules.
     There are times while working on large application, we might want to divid our application in differnet modules. Zend supports creating multiple modules. Lets create 'library' module for our test application.
         zf create module library
-    
+    This will create folder 'library' under applications folder and initilize module with some files.
+
+* Now we need to create controllers. Lets create a controller 'Index'
+        zf create controller Index 1 posts
 
 
 
-zf create controller Index 1 posts
 zf create controller Create 1 posts
 zf create controller Delete 1 posts
 zf create controller Update 1 posts
