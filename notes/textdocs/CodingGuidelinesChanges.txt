@@ -1,0 +1,39 @@
+MySQL:
+------
+
+1. Prefer inner joins over left joins.
+
+2. Do not mention number after integer type. like 
+    wrong:
+      amount int(11) NOT NULL
+    correct
+      amount int NOT NULL
+
+3. Primary auto increment keys must be unsigned. example
+    id int UNSIGNED NOT NULL PRIMARY KEY
+      
+PHP:
+----
+
+1. No debug statement.
+
+2. Add MySQL naming conventions.
+
+
+BAS Specific section in Coding guidelines:
+------------------------------------------
+
+
+General:
+--------
+1. Define config change process.
+2. Add reference section where ever needed.
+
+
+Config file change guidelines:
+------------------------------
+
+
+SVN Process:
+------------
+SVN Naming convention for branches.
