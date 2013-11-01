@@ -1,0 +1,16 @@
+* Create project project-name
+    zf create project project-name
+  
+* Create config
+    zf create config
+  
+* Enable layout
+    zf enable layout
+
+
+zf create module posts
+zf create controller Index 1 posts
+zf create controller Create 1 posts
+zf create controller Delete 1 posts
+zf create controller Update 1 posts
+zf create controller View 1 posts
