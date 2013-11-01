@@ -41,8 +41,17 @@
 
 * Now we need to create controllers. Lets create a controller 'Index'
         zf create controller Index 1 posts
+    This will create index controller with respective sample view files. Confirm it in the browser.
 
-
+* Configure database
+    Run following command to configure database
+        zf configure db-adapter "adapter=PDO_MYSQL&host=localhost&username=root&password=rootpw&dbname=sample" production
+    This will make following entries in the application.ini file
+        resources.db.adapter = "PDO_MYSQL"
+        resources.db.params.host = "localhost"
+        resources.db.params.username = "root"
+        resources.db.params.password = "rootpw"
+        resources.db.params.dbname = "sample"
 
 zf create controller Create 1 posts
 zf create controller Delete 1 posts
