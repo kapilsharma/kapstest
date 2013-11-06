@@ -1,0 +1,11 @@
+{
+    "name" : "hello_express",
+    "version" : "0.1.1",
+    "description" : "npm introduction",
+    "main" : "02helloexpress.js",
+    "dependencies" : {
+        "express" : "~3.2.6"
+    },
+    "author" : "Kapil Sharma",
+    "license" : "Whatever fit your need"
+}
